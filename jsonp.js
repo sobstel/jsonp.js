@@ -4,7 +4,8 @@ var $jsonp = (function(){
   var that = {};
 
   that.send = function(src, options) {
-    var callback_name = options.callbackName || 'callback',
+    var options = options || {},
+      callback_name = options.callbackName || 'callback',
       on_success = options.onSuccess || function(){},
       on_timeout = options.onTimeout || function(){},
       timeout = options.timeout || 10;
