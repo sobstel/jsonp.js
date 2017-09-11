@@ -48,7 +48,7 @@
     };
 
     return that;
-  };
+  }();
 
   // retain backwards-compatible name
   exports.$jsonp = exports.jsonp;
