@@ -15,7 +15,7 @@
     factory(exports);
   } else {
     // Browser globals
-    factory((root.PCACapturePlus = {}));
+    factory((root.jsonp = {}));
   }
 })(this, function(exports) {
 
