@@ -19,7 +19,7 @@
   }
 })(this, function(exports) {
 
-  exports.jsonp = function () {
+  exports.jsonp = (function () {
     var that = {};
 
     that.send = function(src, options) {
@@ -48,7 +48,7 @@
     };
 
     return that;
-  }();
+  })();
 
   // retain backwards-compatible name
   exports.$jsonp = exports.jsonp;
